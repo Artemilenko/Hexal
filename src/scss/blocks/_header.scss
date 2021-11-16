@@ -1,0 +1,86 @@
+.header {
+	height: 63px;
+	&__wrapper {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 1020px;
+		height: 63px;
+		display: flex;
+		z-index: 10;
+	}
+	&__part {
+		background-color: $dark-grey;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__menu {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		&-left {
+			justify-content: flex-end;
+			padding: 0 75px 0 20px;
+		}
+		&-right {
+			justify-content: flex-start;
+			padding: 0 20px 0 75px;
+		}
+	}
+	&__menu-item {
+		margin: 0 20px;
+		display: flex;
+		align-items: center;
+		z-index: 30;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__logo-wrapper {
+		background-color: $dark-grey;
+		position: absolute;
+		bottom: -26px;
+		left: 50%;
+		transform: translate(-50%);
+		width: 180px;
+		height: 206px;
+		clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+		z-index: 20;
+	}
+	&__logo {
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: 26px;
+		width: 64px;
+		height: 55px;
+	}
+	&__link {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: 'Lato Bold';
+		font-size: 13px;
+		color: $white;
+		transition: all 0.3s ease;
+		&--active {
+			color: $green;
+		}
+		&:hover {
+			transition: all 0.3s ease;
+			color: $green;
+		}
+	}
+	&__dot {
+		width: 2px;
+		height: 2px;
+		border-radius: 50%;
+		background-color: lighten($dark-grey, 15%);
+	}
+}

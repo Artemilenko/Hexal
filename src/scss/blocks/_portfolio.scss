@@ -1,9 +1,10 @@
-/* .portfolio {
+.portfolio {
     min-height: 721px;
     &__wrapper {
         padding: 11px 20px 0;
+        position: relative;
     }
-    &__hr-first {
+    &__hr-top, &__hr-down {
         width: 960px;
         margin: 0 auto 78px;
         background-color: $light-grey;
@@ -11,9 +12,65 @@
         display: flex;
         justify-content: center;
     }
-    &__hr-second {
+    &__hr-down {
+        margin: 78px auto 0;
+    }
+    &__internal-line {
         width: 140px;
         background-color: $white;
         height: 1px;
     }
-} */
+    &__images-block {
+        height: 542px;
+    }
+    &__images {
+        position: relative;
+        display: grid;
+        grid-template: auto / repeat(4, auto);
+        grid-auto-rows: auto;
+        justify-content: center;
+        column-gap: 20px;
+        &--second-floor {
+            grid-template: auto / repeat(5, auto);
+            position: relative;
+            top: -38px;
+        }
+        &--third-floor {
+            position: relative;
+            top: -76px;
+        }
+        &--first-floor, &--third-floor {
+            &::after, &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 104px;
+                width: 1px;
+                background-color: $light-grey;
+                top: 50%;
+                right: 79px;
+                transform: translateY(-50%);
+            }
+            &::before {
+                left: 79px;
+            }
+        }
+    }
+    &__img-wrapper {
+        position: relative;
+        width: 180px;
+        height: 206px;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        &:hover {
+            transition: all 0.3s ease;
+            filter: contrast(40%);
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .header {
-	height: 63px;
+	min-height: 63px;
 	&__wrapper {
 		position: fixed;
 		top: 0;
@@ -20,6 +20,7 @@
 	&__menu {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		&-left {
 			justify-content: flex-end;

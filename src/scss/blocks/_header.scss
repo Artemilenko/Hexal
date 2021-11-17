@@ -1,11 +1,12 @@
 .header {
 	min-height: 63px;
+	position: relative;
 	&__wrapper {
 		position: fixed;
 		top: 0;
 		left: 50%;
 		transform: translate(-50%);
-		width: 1020px;
+		width: 100vw;
 		height: 63px;
 		display: flex;
 		z-index: 10;

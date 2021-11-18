@@ -1,0 +1,104 @@
+.get-in-touch {
+    background-color: $dark-grey;
+    &__wrapper {
+        padding: 11px 0;
+    }
+    &__top-line, &__down-line {
+        margin: 0 auto;
+        width: 960px;
+        height: 1px;
+        background-color: darken($dark-grey, 5%);
+    }
+    &__block {
+        margin: 53px auto;
+        width: 780px;
+    }
+    &__title {
+        font-family: 'Maven Pro Regular';
+        font-size: 40px;
+        line-height: 40px;
+        color: darken($white, 15%);
+    }
+    &__subtitle {
+        margin-top: 5px;
+        font-family: 'Maven Pro Regular';
+        font-size: 24px;
+        line-height: 24px;
+        color: darken($white, 15%);
+    }
+    &__form-wrapper {
+        width: 780px;
+        margin-top: 20px;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    &__form {
+        width: 580px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__input {
+        margin-bottom: 16px;
+        border: none;
+        width: 100%;
+        height: 38px;
+        padding: 0 15px;
+        background-color: lighten($dark-grey, 10%);
+        color: darken($white, 15%);
+        font-family: 'Lato regular';
+        &::placeholder {
+            color: darken($white, 15%);
+            font-family: 'Lato regular';
+        }
+    }
+    &__message {
+        width: 100%;
+        height: 150px;
+        padding: 10px 15px;
+        border: none;
+        background-color: lighten($dark-grey, 10%);
+        color: darken($white, 15%);
+        resize: none;
+        font-family: 'Lato regular';
+        &::placeholder {
+            color: darken($white, 15%);
+            font-family: 'Lato regular';
+        }
+    }
+    &__button {
+        margin-top: 16px;
+        width: 96px;
+        height: 37px;
+        text-transform: uppercase;
+        border: none;
+        background-color: $green;
+        font-family: 'Lato Bold';
+        color: $white;
+    }
+    &__side {
+        width: 180px;
+        font-family: 'Lato Regular';
+        color: darken($white, 15%);
+        text-align: justify;
+    }
+    &__bold {
+        font-family: 'Lato Bold';
+    }
+    &__contacts-wrapper {
+        margin-top: 45px;
+    }
+    &__link {
+        text-decoration: none;
+        color: darken($white, 15%);
+        transition: all 0.3s ease;
+        &:hover {
+            transition: all 0.3s ease;
+            color: $green;
+        }
+    }
+    &__icons {
+        color: $green;
+        margin-right: 15px;
+    }
+}

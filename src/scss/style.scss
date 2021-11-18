@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 ul {
@@ -29,3 +30,4 @@ h1, h2, h3, p {
 @import './blocks/portfolio';
 @import './blocks/comments';
 @import './blocks/slider';
+@import './blocks/get-in-touch';

@@ -7,7 +7,7 @@
     &__hr-top, &__hr-down {
         width: 960px;
         margin: 0 auto 78px;
-        background-color: $light-grey;
+        background-color: darken($white, 15%);
         height: 1px;
         display: flex;
         justify-content: center;
@@ -46,7 +46,7 @@
                 display: block;
                 height: 104px;
                 width: 1px;
-                background-color: $light-grey;
+                background-color: darken($white, 15%);
                 top: 50%;
                 right: 79px;
                 transform: translateY(-50%);

@@ -1,5 +1,6 @@
 @import './libs/bootstrap-reboot.min';
 @import './libs/fonts';
+@import './libs/icomoon';
 @import './base/variables';
 
 * {
@@ -14,6 +15,10 @@ ul {
     list-style: none;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
@@ -23,3 +28,4 @@ ul {
 @import './blocks/header';
 @import './blocks/portfolio';
 @import './blocks/comments';
+@import './blocks/slider';

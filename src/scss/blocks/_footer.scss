@@ -1,0 +1,13 @@
+.footer {
+    background-color: darken($dark-grey, 10%);
+    &__wrapper {
+        height: 43px;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        font-family: 'Maven Pro Regular';
+        color: $dark-grey;
+    }
+}

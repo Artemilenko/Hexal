@@ -2,6 +2,7 @@
 @import './libs/fonts';
 @import './libs/icomoon';
 @import './base/variables';
+@import './base/animations';
 
 * {
     margin: 0;
@@ -37,3 +38,5 @@ input {
 @import './blocks/slider';
 @import './blocks/get-in-touch';
 @import './blocks/footer';
+@import './blocks/hamburger';
+@import './blocks/media';

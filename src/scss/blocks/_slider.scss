@@ -3,16 +3,9 @@
     height: 316px;
     border-left: 1px solid darken($green, 5%);
     border-right: 1px solid darken($green, 5%);
-    overflow: hidden;
     display: flex;
+    align-items: center;
     position: relative;
-    &__inner {
-        margin: auto;
-        position: relative;
-        left: 0;
-        display: flex;
-        align-items: center;
-    }
     &__slide-wrapper {
         min-width: 100%;
         padding: 0 20px;
@@ -30,6 +23,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    &__active-photo {
+        animation-name: photo;
+        animation-duration: 1.5s;
     }
     &__descr-wrapper {
         width: 100%;

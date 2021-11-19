@@ -13,11 +13,11 @@
             <div class="header__part header__part-left">
                 <ul class="header__menu header__menu-left">
                     <li class="header__menu-item">
-                        <a class="header__link header__link--active" href="#">portfolio</a>
+                        <a class="header__link header__link--active" href="#portfolio">portfolio</a>
                     </li>
                     <div class="header__dot"></div>
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">about</a>
+                        <a class="header__link" href="#comments">about</a>
                     </li>
                 </ul>
             </div>
@@ -33,15 +33,32 @@
                     </li>
                     <div class="header__dot"></div>
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">get in touch</a>
+                        <a class="header__link" href="#get-in-touch">get in touch</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
+    <div class="hamburger">
+        <ul class="hamburger__menu">
+            <li class="hamburger__menu-item">
+                <a class="hamburger__link" href="#portfolio">portfolio</a>
+            </li>
+            <li class="hamburger__menu-item">
+                <a class="hamburger__link" href="#comments">about</a>
+            </li>
+            <li class="hamburger__menu-item">
+                <a class="hamburger__link" href="#">blog</a>
+            </li>
+            <li class="hamburger__menu-item">
+                <a class="hamburger__link" href="#get-in-touch">get in touch</a>
+            </li>
+        </ul>
+    </div>
+
     <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio__wrapper">
                     <div class="portfolio__hr-top">
@@ -98,18 +115,12 @@
                 </div>
             </div>
         </section>
-
-        <section class="comments">
+        <section class="comments" id="comments">
             <div class="container">
-                <div class="slider">
-                    <div class="slider__inner">
-
-                    </div>
-                </div>
+                <div class="slider"></div>
             </div>
         </section>
-
-        <section class="get-in-touch">
+        <section class="get-in-touch" id="get-in-touch">
             <div class="container">
                 <div class="get-in-touch__wrapper">
                     <div class="get-in-touch__top-line"></div>
@@ -148,7 +159,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

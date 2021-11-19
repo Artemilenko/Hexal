@@ -172,4 +172,50 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     new Slider('.slider__inner', 'js/db.json').init();
+
+    (function() {
+        class Form {
+            constructor(selector, path, fields) {
+                this.selector = document.querySelector(selector);
+                this.path = path;
+                this.fields = this.selector.querySelectorAll(fields);
+            }
+
+            async request(url, data) {
+                const result = await fetch(url, {
+                    method: 'POST',
+                    body: data
+                });
+
+                return await result.text();
+            }
+
+            clearFields() {
+                this.fields.forEach(field => {
+                    field.value = '';
+                });
+            }
+
+            form() {
+                this.selector.addEventListener('submit', e => {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this.selector);
+
+                    this.request(this.path, formData)
+                    .then(response => {
+                        console.log(response);
+                    })
+                    .catch(() => {
+                        console.log('Error');
+                    })
+                    .finally(() => {
+                        this.clearFields();
+                    });
+                });
+            }
+        }
+
+        new Form('.get-in-touch__form', 'js/server.php', '[data-post]').form();
+    }());
 });

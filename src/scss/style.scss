@@ -20,6 +20,11 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+input {
+    -webkit-text-fill-color: darken($white, 15%);
+    -webkit-box-shadow: 0 0 0px 1000px lighten($dark-grey, 10%) inset;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;

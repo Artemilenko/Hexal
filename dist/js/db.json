@@ -1,42 +1,42 @@
 {
     "commentators": [
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of Smith Anderson",
             "name": "Smith Anderson",
             "profession": "Illustrator & Character Designer",
             "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna."
         },
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of David Paul",
             "name": "David Paul",
             "profession": "Web-Developer",
             "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus."
         },
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of Jason Plant",
             "name": "Jason Plant",
             "profession": "Art Director",
             "comment": "Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna."
         },
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of Allen Jones",
             "name": "Allen Jones",
             "profession": "Photographer",
             "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna."
         },
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of Walter White",
             "name": "Walter White",
             "profession": "Illustrator",
             "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis."
         },
         {
-            "src": "../img/slider/commentator.svg",
+            "src": "img/slider/commentator.svg",
             "alt": "Photo of Jack Brown",
             "name": "Jack Brown",
             "profession": "3D Artist",

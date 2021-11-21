@@ -57,20 +57,16 @@
 		background-color: $dark-grey;
 		position: absolute;
 		bottom: -26px;
-		left: 50%;
-		transform: translate(-50%);
-		width: 180px;
-		height: 206px;
-		clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
         z-index: -1;
+        @include align-center-horizontal;
+        @include hexagon;
 	}
     &__logo {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         bottom: 30px;
         width: 50px;
         z-index: 10;
+        @include align-center-horizontal;
     }
     &__logo-icon {
         width: 100%;

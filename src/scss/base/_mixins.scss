@@ -1,0 +1,9 @@
+@mixin align-center-horizontal {
+    left: 50%;
+	transform: translateX(-50%);
+}
+@mixin hexagon {
+    min-width: 180px;
+    height: 206px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}

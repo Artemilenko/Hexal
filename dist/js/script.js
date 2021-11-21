@@ -189,4 +189,53 @@ window.addEventListener('DOMContentLoaded', () => {
 
         new Form('.get-in-touch__form', 'js/server.php', '[data-post]').form();
     }());
+
+    (function() {
+        class Hamurger {
+            constructor (selector, hamburgerButton, btns) {
+                this.selector = document.querySelector(selector);
+                this.hamburgerButton = this.selector.querySelector(hamburgerButton);
+                this.btns = this.selector.querySelectorAll(btns);
+            }
+
+            menuBtns() {
+                this.btns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.selector.style.top = '-91%';
+                        this.hamburgerButton.classList.remove('hamburger__logo-icon--active');
+                    });
+                });
+            }
+
+            resizeMenu() {
+                window.addEventListener('resize', () => {
+                    if (window.screen.availWidth > 992) {
+                        this.selector.style.display = 'none';
+                    } else {
+                        this.selector.style.display = 'block';
+                    }
+                });
+            }  
+
+            showBurgerMenu() {
+                this.selector.style.top = '-91%';
+
+                this.hamburgerButton.addEventListener('click', () => {
+                    if (this.selector.style.top === '-91%' && window.screen.availWidth < 993) {
+                        this.selector.style.top = '0';
+                        this.hamburgerButton.classList.add('hamburger__logo-icon--active');
+                    } else {
+                        this.selector.style.top = '-91%';
+                        this.hamburgerButton.classList.remove('hamburger__logo-icon--active');
+                    }
+                });
+
+                this.menuBtns();
+
+                this.resizeMenu();
+            }
+        }
+
+        new Hamurger('.hamburger', '.hamburger__logo-icon', '.hamburger__link').showBurgerMenu();
+    }());
 });

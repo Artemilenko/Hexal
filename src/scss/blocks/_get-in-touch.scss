@@ -30,10 +30,10 @@
         width: 780px;
         margin-top: 20px;
         display: inline-flex;
-        justify-content: space-between;
+        gap: 20px;
     }
     &__form {
-        width: 580px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -88,6 +88,7 @@
         color: darken($white, 15%);
         text-align: justify;
         font-size: 13px;
+        flex-shrink: 0;
     }
     &__bold {
         font-family: 'Lato Bold';

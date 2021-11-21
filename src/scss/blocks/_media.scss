@@ -1,4 +1,4 @@
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
         width: 960px;
     }
@@ -10,23 +10,206 @@
             column-gap: 15px;
         }
     }
+    .slider {
+        &__dots {
+            left: 1px;
+        }
+    }
 }
-
 @media (max-width: 992px) {
     .container {
         width: 720px;
     }
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+    .portfolio {
+        &__top-line, &__down-line {
+            width: 660px;
+        }
+        &__images-block {
+            height: 878px;
+            display: grid;
+            justify-content: center;
+            column-gap: 15px;
+            grid-template-areas: 
+            "a a b b c c"
+            ". d d e e ."
+            "f f g g h h "
+            ". i i j j ."
+            "k k l l m m"
+            ;
+        }
+    }
+    #d, #e {
+        top: -38px;
+    }
+    #f, #g, #h {
+        top: -76px;
+    }
+    #i,#j {
+        top: -114px;
+    }
+    #k, #l, #m {
+        top: -152px;
+    }
+    .slider {
+        &__dots {
+            left: 29px;
+        }
+    }
+    .get-in-touch {
+        &__top-line, &__down-line {
+            width: 660px;
+        }
+        &__block {
+            width: 100%;
+        }
+        &__form-wrapper {
+            width: 100%;
+        }
+    }
 }
-
 @media (max-width: 768px) {
     .container {
         width: 540px;
     }
+    .portfolio {
+        &__top-line, &__down-line {
+            width: 480px;
+        }
+        &__images-block {
+            height: 1550px;
+            display: grid;
+            justify-content: center;
+            column-gap: 15px;
+            grid-template-areas: 
+            ". a a ."
+            "b b c c"
+            ". d d ."
+            "e e f f"
+            ". g g ."
+            "h h i i"
+            ". j j ."
+            "k k l l"
+            ". m m ."
+            ;
+        }
+    }
+    #b, #c {
+        top: -38px;
+    }
+    #d {
+        top: -76px;
+    }
+    #e, #f {
+        top: -114px;
+    }
+    #g {
+        top: -152px;
+    }
+    #h, #i {
+        top: -190px;
+    }
+    #j {
+        top: -228px;
+    }
+    #k, #l {
+        top: -266px;
+    }
+    #m {
+        top: -304px;
+    }
+    .get-in-touch {
+        &__top-line, &__down-line {
+            width: 480px;
+        }
+    }
 }
-
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 15px;
     }
-} */
+    .portfolio {
+        &__top-line, &__down-line {
+            width: 100%;
+        }
+        &__images-block {
+            min-height: 2918px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        &__img {
+            position: static;
+        }
+    #a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m {
+        top: 0;
+    }
+    }
+    .slider {
+        text-align: center;
+        &__slide-wrapper {
+            flex-direction: column;
+        }
+        &__name {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__profession {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__social-bar {
+            justify-content: center;
+        }
+        &__dots {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    .get-in-touch {
+        text-align: center;
+        &__top-line, &__down-line {
+            width: 100%;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__form-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        &__form {
+            align-items: center;
+        }
+        &__side {
+            width: 100%;
+        }
+        &__contacts-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding: 0;
+            justify-content: center;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .slider {
     margin: 0 auto;
-    height: 316px;
+    padding: 55px 0;
     border-left: 1px solid darken($green, 5%);
     border-right: 1px solid darken($green, 5%);
     display: flex;
@@ -15,7 +15,7 @@
         gap: 20px;
     }
     &__photo-wrapper {
-        width: 180px;
+        min-width: 180px;
         height: 206px;
         clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     }
@@ -39,12 +39,14 @@
     }
     &__profession {
         font-family: 'Maven Pro regular';
-        font-size:24px;
+        font-size: 24px;
+        line-height: 24px;
         color: darken($green, 15%);
     }
     &__comment {
         height: 96px;
         margin-top: 10px;
+        padding-right: 5px;
         font-family: 'Lato regular';
         color: $white;
         text-align: justify;
@@ -80,7 +82,7 @@
     &__dots {
         position: absolute;
         top: -42px;
-        left: 30px;
+        left: 29px;
         display: inline-flex;
         align-items: center;
         &:last-child {
@@ -97,66 +99,3 @@
         background-color: darken($white, 60%);
     }
 }
-
-/* .Slider {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1020px;
-    height: 1732px;
-    z-index: 128;
-  }
-  .Rectangle_2_copy_5 {
-    background-color: rgb(221, 210, 197);
-    position: absolute;
-    left: 75px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 127;
-  }
-  .Rectangle_2_copy_4 {
-    background-color: rgb(221, 210, 197);
-    position: absolute;
-    left: 66px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 126;
-  }
-  .Rectangle_2_copy_3 {
-    background-color: rgb(221, 210, 197);
-    position: absolute;
-    left: 57px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 125;
-  }
-  .Rectangle_2_copy_2 {
-    background-color: rgb(139, 135, 132);
-    position: absolute;
-    left: 48px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 124;
-  }
-  .Rectangle_2_copy {
-    background-color: rgb(221, 210, 197);
-    position: absolute;
-    left: 39px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 123;
-  }
-  .Rectangle_2 {
-    background-color: rgb(221, 210, 197);
-    position: absolute;
-    left: 30px;
-    top: 755px;
-    width: 6px;
-    height: 6px;
-    z-index: 122;
-  } */

@@ -1,10 +1,11 @@
 .portfolio {
     min-height: 721px;
+    padding: 11px;
     &__wrapper {
-        padding: 11px 20px;
+        padding: 0 20px;
         position: relative;
     }
-    &__hr-top, &__hr-down {
+    &__top-line, &__down-line {
         width: 960px;
         margin: 0 auto 78px;
         background-color: darken($white, 15%);
@@ -12,7 +13,7 @@
         display: flex;
         justify-content: center;
     }
-    &__hr-down {
+    &__down-line {
         margin: 78px auto 0;
     }
     &__internal-line {
@@ -22,39 +23,14 @@
     }
     &__images-block {
         height: 542px;
-    }
-    &__images {
-        position: relative;
         display: grid;
-        grid-template: auto / repeat(4, auto);
-        grid-auto-rows: auto;
         justify-content: center;
-        column-gap: 20px;
-        &--second-floor {
-            grid-template: auto / repeat(5, auto);
-            position: relative;
-            top: -38px;
-        }
-        &--third-floor {
-            position: relative;
-            top: -76px;
-        }
-        &--first-floor, &--third-floor {
-            &::after, &::before {
-                content: '';
-                position: absolute;
-                display: block;
-                height: 104px;
-                width: 1px;
-                background-color: darken($white, 15%);
-                top: 50%;
-                right: 79px;
-                transform: translateY(-50%);
-            }
-            &::before {
-                left: 79px;
-            }
-        }
+        column-gap: 15px;
+        grid-template-areas: 
+        ". a a b b c c d d ."
+        "e e f f g g h h i i"
+        ". j j k k l l m m ."
+        ;
     }
     &__img-wrapper {
         position: relative;
@@ -64,6 +40,8 @@
 
     }
     &__img {
+        display: block;
+        position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -73,4 +51,52 @@
             filter: contrast(40%);
         }
     }
+}
+#a {
+    grid-area: a;
+}
+#b {
+    grid-area: b;
+}
+#c {
+    grid-area: c;
+}
+#d {
+    grid-area: d;
+}
+#e {
+    grid-area: e;
+    top: -38px;
+}
+#f {
+    grid-area: f;
+    top: -38px;
+}
+#g {
+    grid-area: g;
+    top: -38px;
+}
+#h {
+    grid-area: h;
+    top: -38px;
+}
+#i {
+    grid-area: i;
+    top: -38px;
+}
+#j {
+    grid-area: j;
+    top: -76px;
+}
+#k {
+    grid-area: k;
+    top: -76px;
+}
+#l {
+    grid-area: l;
+    top: -76px;
+}
+#m {
+    grid-area: m;
+    top: -76px;
 }
